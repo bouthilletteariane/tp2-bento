@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* Importation de polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=DM+Sans:opsz,wght@9..40,500&family=DM+Sans:ital,opsz,wght@1,9..40,500&display=swap');
+
+/**
+ * @author X <X@csfoy.ca>
+ *
+ * TABLE DES MATIERES
+ *
+ * Reset
+ * Utilitaires
+ * Charte typographique
+ * Grille de mise en page 
+ *
+ */
+
+/* Reset
+   ========================================================================== */
+
+@import url(normalize.css);
+
+
+/* Utilitaires
+   ========================================================================== */
+
+/* Définir des variables CSS */
+:root {
+    /* Couleurs */
+    --color-primary: #7551db;
+    --color-secondary: #fecc6a;
+    --color-tertiary: rgb(221, 209, 252); 
+}
+
+
+/*** Harmoniser le modèle de boîte avec Box-Sizing ***/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+ 
+/* fluidifier les images */
+img{
+    max-width: 100%;
+}
+ 
+/* Charte typographique
+   ========================================================================== */
+ 
+/* Base décimale */
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    /* taille de police du texte sur l'écran étroit: 14px */
+    font-size: 1.4rem;
+    /* facteur multiplicateur de la taille de la police 1.375x16 = 22 */
+    line-height: 1.375;
+} 
+
+@media (min-width: 600px) {
+    body {
+        line-height: 1.5;
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 800px) {
+    body {
+        line-height: 1.75;
+        font-size: 1.6rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4{ 
+    font-weight: 500;
+}
+ 
+/* Hiérarchie responsive : plus proche = plus petit  &  plus loin = plus grand */
+/* AJUSTER LES VALEURS SELON VOTRE PROJET */
+h1 {
+    /* = 24px */
+    font-size: 2.4rem;
+}
+@media (min-width: 600px) {
+    h1 {
+        /* = 32px */
+        font-size: 3.2rem;
+    }
+}
+@media (min-width: 800px) {
+    h1 {
+        /* = 36px */
+        font-size: 3.6rem;
+    }
+}
+
+/* Grille de mise en page
+   ========================================================================== */
