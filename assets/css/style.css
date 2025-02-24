@@ -108,3 +108,17 @@ h1 {
 
 /* Grille de mise en page
    ========================================================================== */
+   @media (min-width: 600px) {
+    .temoignage {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      grid-template-areas: 
+     "daniel daniel jonathan kira"
+     "jeanette patrick patrick kira";
+     padding: 20px;
+     font-family: "Josefin Sans", serif;
+  
+      
+    }
+  }
