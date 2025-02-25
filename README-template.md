@@ -18,8 +18,6 @@ Il s'agit d'une solution pour le [défi Grille Bento sur Frontend Mentor](https:
   - [Auteur](#auteur)
   - [Remerciements](#remerciements)
 
-**Remarque : Supprimez cette note et mettez à jour la table des matières en fonction des sections que vous conservez.**
-
 ## Aperçu
 
 ### Le défi
@@ -30,22 +28,18 @@ Les utilisateurs doivent être capables de :
 
 ### Capture d'écran
 
-![](./screenshot.jpg)
+![](./assets/images/capture__ecran.png)
 
-Ajoutez une capture d'écran de votre solution. La manière la plus simple de le faire est d'utiliser Firefox pour afficher votre projet, de faire un clic droit sur la page et de sélectionner "Prendre une capture d'écran". Vous pouvez choisir soit une capture d'écran pleine hauteur, soit une version recadrée en fonction de la longueur de la page. Si la page est très longue, il peut être préférable de la recadrer.
-
-Alternativement, vous pouvez utiliser un outil comme [FireShot](https://getfireshot.com/) pour prendre la capture d'écran. FireShot propose une option gratuite, vous n'avez donc pas besoin de l'acheter.
-
-Ensuite, recadrez/optimisez/modifiez votre image comme bon vous semble, ajoutez-la à votre projet et mettez à jour le chemin du fichier dans l'image ci-dessus.
-
-**Remarque : Supprimez cette note et les paragraphes ci-dessus lorsque vous ajoutez votre capture d'écran. Si vous préférez ne pas ajouter de capture d'écran, n'hésitez pas à supprimer cette section entière.**
 
 ### Liens
 
-- URL de la solution : [Ajoutez l'URL de la solution ici](https://your-solution-url.com)
-- URL du site en direct : [Ajoutez l'URL du site en direct ici](https://your-live-site-url.com)
+- URL de la solution : [https://github.com/bouthilletteariane/tp2-bento.git]
+- URL du site en direct : [http://127.0.0.1:5500/]
 
 ## Mon processus
+J'ai commencé par construire la grille pour que les blocs soient prêts pour les ajouts Css. J'ai pris le temps d'ajouter les images directement dans le html. J'ai essayer d'ajouter les grandeurs directement dans le html, mais c'était plus simple de tout simplement garder la taille des images à 100%. 
+
+Par la suite, j'ai pris le temps d'ajuster la taille des textes, les espaces et la hauteur et largeur des box. 
 
 ### Technologies utilisées
 
@@ -55,56 +49,46 @@ Ensuite, recadrez/optimisez/modifiez votre image comme bon vous semble, ajoutez-
 - CSS Grid
 - Workflow mobile-first 
 
-**Remarque : Ce sont juste des exemples. Supprimez cette note et remplacez la liste ci-dessus par vos propres choix.**
-
 ### Ce que j'ai appris
 
-Utilisez cette section pour résumer certains de vos principaux apprentissages lors de la réalisation de ce projet. Les écrire et fournir des exemples de code des zones que vous souhaitez mettre en avant est un excellent moyen de renforcer vos propres connaissances.
+J'ai appris à construire une grille avec "display:grid;" et "grid-template-areas". Je suis très fière de ce code puisque je me suis inspiré du dernier exercice et je l'ai adapté à cette nouvelle grille. 
 
 Voici un exemple de la manière dont vous pouvez ajouter des extraits de code :
 
-```html
-<h1>Un code HTML dont je suis fier</h1>
-```
-
 ```css
-.fier-de-ce-css {
-  color: papayawhip;
-}
+@media (min-width: 600px) {
+    .boite__media__sociaux {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      grid-template-areas: 
+     "boite__media__sociaux7 boite__media__sociaux1 boite__media__sociaux1 boite__media__sociaux4 "
+     "boite__media__sociaux7 boite__media__sociaux2 boite__media__sociaux3 boite__media__sociaux4"
+     "boite__media__sociaux7 boite__media__sociaux6 boite__media__sociaux5 boite__media__sociaux5"
+  
+      
+    }
+  }
 ```
-
-```js
-const fierDeCetteFonction = () => {
-  console.log('🎉')
-}
-```
-
-Si vous voulez plus d'aide pour rédiger du markdown, nous vous recommandons de consulter [Le Guide du Markdown](https://www.markdownguide.org/) pour en savoir plus.
-
-**Remarque : Supprimez cette note et le contenu de cette section et remplacez-le par vos propres apprentissages.**
 
 ### Développement continu
 
-Utilisez cette section pour préciser les domaines sur lesquels vous souhaitez continuer à vous concentrer lors de projets futurs. Il peut s'agir de concepts que vous ne maîtrisez pas encore totalement ou de techniques que vous avez trouvées utiles et que vous souhaitez affiner et perfectionner.
+Dans mes futurs projets, j'aimerais me concentrer justement sur les grilles CSS je trouve que les possibilités sont infinies. J'ai commencé à me faire un portfolio en ligne et les grilles vont grandements me servir afin de rendre mon site plus beau et professionnel. 
 
-**Remarque : Supprimez cette note et le contenu de cette section et remplacez-le par vos propres projets de développement continu.**
 
 ### Ressources utiles
 
-- [Exemple de ressource 1](https://www.example.com) - Cela m'a aidé pour XYZ. J'ai vraiment aimé ce modèle et je vais l'utiliser à l'avenir.
-- [Exemple de ressource 2](https://www.example.com) - C'est un excellent article qui m'a aidé à comprendre XYZ. Je le recommanderais à toute personne qui apprend encore ce concept.
+- [https://developer.mozilla.org/fr/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox] - Cela m'a aider avec les flexbox.
+- [https://cssgridgarden.com/#fr] - J'ai dû refaire l'exercice pour mieux comprendre 
 
-**Remarque : Supprimez cette note et remplacez la liste ci-dessus par des ressources qui vous ont aidé pendant le défi. Elles pourraient être utiles pour toute personne qui consulte votre solution ou pour vous-même lorsque vous reviendrez sur ce projet dans le futur.**
 
 ## Auteur
 
-- Site Web - [Ajoutez votre nom ici](https://www.your-site.com)
+- Site Web - Ariane Bouthillette
 - Frontend Mentor - [@votrepseudo](https://www.frontendmentor.io/profile/votrepseudo) 
 
-**Remarque : Supprimez cette note et ajoutez/supprimez/modifiez les lignes ci-dessus en fonction des liens que vous souhaitez partager.**
+
 
 ## Remerciements
 
-C'est ici que vous pouvez rendre hommage à toute personne qui vous a aidé sur ce projet. Peut-être avez-vous travaillé en équipe ou trouvé de l'inspiration dans la solution de quelqu'un d'autre. C'est l'endroit parfait pour leur rendre hommage.
-
-**Remarque : Supprimez cette note et modifiez le contenu de cette section si nécessaire. Si vous avez réalisé ce défi seul, n'hésitez pas à supprimer cette section entièrement.**
+J'aimerais remercier mes collègues de classe qui m'ont aider pour certains éléments CSS qui ne fonctionnait pas. Également merci à Ève Février, enseingante en Intégration II pour m'avoir rassuré lorsque j'avais des problèmes de html ou même de CSS. 

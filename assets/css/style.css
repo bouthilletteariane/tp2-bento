@@ -170,6 +170,7 @@ li {
     padding:20px;
     color:white;
     text-align: center;
+    height: auto;
   }
   .boite__media__sociaux2 {
     background-color: hsl(0, 0%, 100%);
@@ -180,11 +181,14 @@ li {
    background-color: hsl(39, 100%, 71%);
    border-radius: 5%;
    padding:20px;
+   font-size: 2.2em;
+   line-height: 90%;
   }
   .boite__media__sociaux4 {
     background-color: hsl(254, 88%, 90%);
     border-radius: 5%;
     padding: 20px;
+    
   }
   .boite__media__sociaux5 {
     background-color: hsl(256, 67%, 59%);
@@ -194,8 +198,8 @@ li {
     color:white;
     line-height: 95%;
 
-    
   }
+
   .boite__media__sociaux6 {
       background-color: hsl(0, 0%, 100%);
       border-radius: 5%;
@@ -219,11 +223,19 @@ li {
   
   .bloc__haut,
   .bloc__bas {
-    flex: 1;                /* Chacune prend 50% de la hauteur totale */
+    flex: 0,75;                /* Chacune prend 50% de la hauteur totale */
     border: 1px solid hsl(39, 100%, 71%); /* Pour les distinguer */
     box-sizing: border-box; /* Bonne pratique pour le dimensionnement */
     padding: 1rem;
     gap:20px;
+    height: auto;
+  }
+  .bloc__haut{
+    padding-bottom: 30px;
+  }
+  .bloc__bas{
+    
+    padding-top: 50px;
   }
   
 /* bloc 5*/
@@ -236,14 +248,37 @@ li {
   border: 1px solid hsl(256, 67%, 59%);
 }
 
-  
-  
+.bloc__droite {
+    padding-top: 30px;
+    font-size: 0.7em;
+    line-height: 90%;
+}
+
+.boite__media__sociaux2 {
+display: flex;
+width: auto;
+height: auto;
+/*padding: var(--spacing-300, 24px);*/
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+border-radius: 10px;
+background: var(--color-white, #FFF);
+font-size: 3em;
+line-height: 90%;
+}
   h1{
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
   }
   .h1__sociaux1 {
     font-size: 3.5em;
+    line-height: 90%;
+  }
+  .haut {
+    font-size: 2.2em;
+    line-height: 90%;
+
   }
 
   
