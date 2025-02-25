@@ -2,7 +2,7 @@
 
 /* Importation de polices Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=DM+Sans:opsz,wght@9..40,500&family=DM+Sans:ital,opsz,wght@1,9..40,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Chicle&family=Didact+Gothic&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=News+Cycle:wght@400;700&family=Original+Surfer&family=Playwrite+ES:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poller+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Spicy+Rice&display=swap');
 /**
  * @author X <X@csfoy.ca>
  *
@@ -60,6 +60,8 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-color: grey;
+    font-family:'Inter';
 
     /* taille de police du texte sur l'écran étroit: 14px */
     font-size: 1.4rem;
@@ -108,17 +110,102 @@ h1 {
 
 /* Grille de mise en page
    ========================================================================== */
+   
+   
+   
    @media (min-width: 600px) {
-    .temoignage {
+    .boite__media__sociaux {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       grid-template-areas: 
-     "daniel daniel jonathan kira"
-     "jeanette patrick patrick kira";
+     "boite__media__sociaux7 boite__media__sociaux1 boite__media__sociaux1 boite__media__sociaux4 "
+     "boite__media__sociaux7 boite__media__sociaux2 boite__media__sociaux3 boite__media__sociaux4"
+     "boite__media__sociaux7 boite__media__sociaux6 boite__media__sociaux5 boite__media__sociaux5";
+    
+     
      padding: 20px;
      font-family: "Josefin Sans", serif;
   
       
     }
+  }
+
+  .boite__media__sociaux {
+    gap: 20px;
+}
+.boite__media__sociaux1 {
+  grid-area: boite__media__sociaux1;
+}
+.boite__media__sociaux2 {
+  grid-area: boite__media__sociaux2;
+}
+.boite__media__sociaux3 {
+  grid-area: boite__media__sociaux3;
+}
+.boite__media__sociaux4 {
+  grid-area: boite__media__sociaux4;
+}
+.boite__media__sociaux5 {
+  grid-area: boite__media__sociaux5;
+}
+.boite__media__sociaux6 {
+    grid-area: boite__media__sociaux6;
+}
+.boite__media__sociaux7 {
+    grid-area: boite__media__sociaux7;
+}
+
+.boite__media__sociaux {
+    padding: 20px;
+    border-radius: 2,5%;
+}
+li {
+  list-style: none;
+  font-family: "Josefin Sans", serif;
+}
+.boite__media__sociaux1 {
+    background-color: hsl(256, 67%, 59%);
+    border-radius: 5%;
+    padding:20px;
+    color:white;
+    text-align: center;
+  }
+  .boite__media__sociaux2 {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2,5%;
+    padding:20px;
+  }
+  .boite__media__sociaux3 {
+   background-color: hsl(39, 100%, 71%);
+   border-radius: 2,5%;
+   padding:20px;
+  }
+  .boite__media__sociaux4 {
+    background-color: hsl(254, 88%, 90%);
+    border-radius: 2,5%;
+    padding: 20px;
+  }
+  .boite__media__sociaux5 {
+    background-color: hsl(256, 67%, 59%);
+    border-radius: 5%;
+    padding:20px;
+  }
+  .boite__media__sociaux6 {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 5%;
+      text-align: center;
+      padding:20px;
+  }
+  .boite__media__sociaux7 {
+      background-color: hsl(39, 100%, 71%);
+      border-radius: 5%;
+      padding:20px;
+  }
+  
+  h1{
+    text-align: center;
+  }
+  .h1__sociaux1 {
+    font-size: 3.5em;
   }
