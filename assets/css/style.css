@@ -173,17 +173,17 @@ li {
   }
   .boite__media__sociaux2 {
     background-color: hsl(0, 0%, 100%);
-    border-radius: 2,5%;
+    border-radius: 5%;
     padding:20px;
   }
   .boite__media__sociaux3 {
    background-color: hsl(39, 100%, 71%);
-   border-radius: 2,5%;
+   border-radius: 5%;
    padding:20px;
   }
   .boite__media__sociaux4 {
     background-color: hsl(254, 88%, 90%);
-    border-radius: 2,5%;
+    border-radius: 5%;
     padding: 20px;
   }
   .boite__media__sociaux5 {
@@ -201,11 +201,18 @@ li {
       background-color: hsl(39, 100%, 71%);
       border-radius: 5%;
       padding:20px;
+      display: flex;
+      flex-direction: column;
+      flex: 3 3 0
+      
   }
   
   h1{
     text-align: center;
+    font-size: 4em;
   }
   .h1__sociaux1 {
     font-size: 3.5em;
   }
+
+  
