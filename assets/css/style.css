@@ -190,6 +190,11 @@ li {
     background-color: hsl(256, 67%, 59%);
     border-radius: 5%;
     padding:20px;
+    font-size: 4em;
+    color:white;
+    line-height: 95%;
+
+    
   }
   .boite__media__sociaux6 {
       background-color: hsl(0, 0%, 100%);
@@ -201,11 +206,37 @@ li {
       background-color: hsl(39, 100%, 71%);
       border-radius: 5%;
       padding:20px;
-      display: flex;
-      flex-direction: column;
-      flex: 3 3 0
-      
+      font-size: 2em;
+      align-content: center;
+                   
   }
+      
+.boite__media__sociaux7 {
+    display: flex;          /* Active Flexbox */
+    flex-direction: column; /* Aligne les éléments verticalement */
+    height: auto;          /* Par exemple, ou toute autre hauteur souhaitée */
+  }
+  
+  .bloc__haut,
+  .bloc__bas {
+    flex: 1;                /* Chacune prend 50% de la hauteur totale */
+    border: 1px solid hsl(39, 100%, 71%); /* Pour les distinguer */
+    box-sizing: border-box; /* Bonne pratique pour le dimensionnement */
+    padding: 1rem;
+    gap:20px;
+  }
+  
+/* bloc 5*/
+    .bloc__gauche,
+    .bloc__droite {
+  width: 50%;        /* 50% de la largeur chacun */
+  float: left;       /* Place les deux divs côte à côte */
+  box-sizing: border-box;
+  padding: 1rem;
+  border: 1px solid hsl(256, 67%, 59%);
+}
+
+  
   
   h1{
     text-align: center;
