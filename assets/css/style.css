@@ -56,7 +56,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: grey;
@@ -99,7 +99,6 @@ h1 {
 /* Grille de mise en page */
 .boite__media__sociaux {
   gap: 20px;
-  padding: 20px;
   border-radius: 5%;
   
 }
@@ -175,9 +174,18 @@ li {
   background-color: hsl(39, 100%, 71%);
   font-size: 2.2em;
   line-height: 90%;
+  background-image: url(/assets/images/illustration-consistent-schedule.webp);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 50% 205%;
 }
 .boite__media__sociaux4 {
   background-color: hsl(254, 88%, 90%);
+  background-image: url(/assets/images/illustration-schedule-posts.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position:  100%;
+
 }
 .boite__media__sociaux5 {
   background-color: hsl(256, 67%, 59%);
@@ -218,7 +226,7 @@ li {
 /* Texte */
 .bloc__haut p,
 .bloc__bas p {
-  font-size: 1.6rem;
+  font-size: 3.5rem;
   color: #111;
   font-weight: 500;
   margin: 0;
@@ -241,7 +249,7 @@ li {
 .bloc__bas img {
   width: 100%;
   max-width: 200px;
-  align-self: flex-end;
+  align-self:center;
 }
 
 /* Responsive */
