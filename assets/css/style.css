@@ -99,12 +99,15 @@ h1 {
 
 /* Grille de mise en page */
 .boite__media__sociaux {
-  gap: 20px;
-  border-radius: 5%;
+  display: grid;
+gap: 1rem;
+list-style: none;
+padding-left: 0;
   
 }
 @media (min-width: 600px) {
   .boite__media__sociaux {
+      
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
@@ -112,7 +115,8 @@ h1 {
           "boite__media__sociaux7 boite__media__sociaux1 boite__media__sociaux1 boite__media__sociaux4"
           "boite__media__sociaux7 boite__media__sociaux2 boite__media__sociaux3 boite__media__sociaux4"
           "boite__media__sociaux7 boite__media__sociaux6 boite__media__sociaux5 boite__media__sociaux5";
-      font-family: "Josefin Sans", serif;
+
+      
       
   }
 }
@@ -183,7 +187,7 @@ li {
   background-image: url(/assets/images/illustration-consistent-schedule.webp);
   background-repeat: no-repeat;
   background-size: 90%;
-  background-position: 50% 400%;
+  background-position: 50% 430%;
   height:260px;
 }
 .boite__media__sociaux4 {
@@ -192,25 +196,21 @@ li {
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: 140% 37%;
-  height: fit-content;
-  
-  
- 
 
+  
 }
 .boite__media__sociaux5 {
   background-color: hsl(256, 67%, 59%);
-  font-size: 3em;
+  font-size: 4.3em;
   color: white;
   line-height: 95%;
-  height: fit-content;
+  
   margin-right: 20px;
   
 }
 .boite__media__sociaux6 {
   background-color: hsl(0, 0%, 100%);
   
-  width: auto;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -220,7 +220,7 @@ li {
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 77%;
-  height: 250px;
+ 
 
 }
 
@@ -233,8 +233,8 @@ li {
 
 .croissance__texte {
   font-size: 14px;
-  color: #555;
-  margin: 8px 0 16px 0;
+  color: #000000;
+  margin: 8px;
 }
 
 .boite__media__sociaux7 {
@@ -242,12 +242,8 @@ li {
   flex-direction: column;
   gap: 20px;
   background-color: #fce2b900; /* Jaune pâle */
-  
   border-radius: 15px;
-  font-family: "Inter", sans-serif;
-  height: fit-content;
-  
-  
+
 }
 
 /* Blocs haut et bas */
@@ -255,12 +251,11 @@ li {
 .bloc__bas {
  
   border-radius: 10px;
-  display: flex;
+  
   flex-direction: column;
-  justify-content: space-between;
+ 
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  display: flex;
-
+ 
   align-content: center;
 }
 .bloc__haut, .bloc__bas {
@@ -281,13 +276,15 @@ li {
 }
 .bloc__haut{
   background-color: hsl(31, 66%, 93%);
-  height:380px;
- align-self: center;
+  height: 100%;
+ 
+ justify-content: center;
 
 }
 .bloc__bas {
   background-color:#fecc6a;
-  height: fit-content;
+  height: 100%;
+
  
   
 }
