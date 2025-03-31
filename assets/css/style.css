@@ -165,7 +165,7 @@ li {
   color: white;
   text-align: center;
   height: fit-content;
-  background-image: url(/assets/images/illustration-five-stars.webp);
+  background-image: url(assets/images/illustration-five-stars.webp);
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: 50% 70%;
@@ -184,7 +184,7 @@ li {
   background-color: hsl(39, 100%, 71%);
   font-size: 1.8em;
   line-height: 90%;
-  background-image: url(/assets/images/illustration-consistent-schedule.webp);
+  background-image: url(assets/images/illustration-consistent-schedule.webp);
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: 50% 430%;
@@ -192,7 +192,7 @@ li {
 }
 .boite__media__sociaux4 {
   background-color: hsl(254, 88%, 90%);
-  background-image: url(/assets/images/illustration-schedule-posts.webp);
+  background-image: url(assets/images/illustration-schedule-posts.webp);
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: 140% 37%;
@@ -216,7 +216,7 @@ li {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url(/assets/images/illustration-audience-growth.webp);
+  background-image: url(assets/images/illustration-audience-growth.webp);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 77%;
